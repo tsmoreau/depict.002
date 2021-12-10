@@ -34,9 +34,9 @@ export default function ReadWrite() {
                     <Disclosure.Panel className="text-center bg-gray-200 leading-0 rounded-lg mt-3 px-6 pt-4 pb-3 text-xs text-gray-700">
                       Depict.Limited is a multi-chain NFT art website founded by
                       artist and coder tsmoreau. We aim for on-chain art, work
-                      with POS chains as much as possible, as generally focus on
-                      EVM compatible networks. Our soft launch is scheduled for
-                      Dec 2021 and we plan on having bi-monthly large drops
+                      with POS chains as much as possible, and generally focus
+                      on EVM compatible networks. Our soft launch is scheduled
+                      for Dec 2021 and we plan on having bi-monthly large drops
                       through 2022.
                     </Disclosure.Panel>
                   </>

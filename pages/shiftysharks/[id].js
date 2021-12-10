@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { ethers } from "ethers";
+import { BigNumber, ethers } from "ethers";
 import { useEffect, useState } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { toast, Toaster, ToastBar } from "react-hot-toast";
@@ -86,6 +86,7 @@ export default function Home() {
   const openSea =
     "https://testnets.opensea.io/assets/mumbai/" +
     sharkTokenAddress +
+    "/" +
     router.query.id;
 
   const url = "/shiftysharks/" + (parseInt(router.query.id, 10) - 1);
@@ -110,7 +111,13 @@ export default function Home() {
 
       const sharkInfo = await TokenContract.idToShark(id);
       setRevealed(sharkInfo[3]);
-      setRawDNA(sharkInfo[1]);
+      setRawDNA(sharkInfo[1]._hex.toString(16));
+      console.log("rawdna");
+      const dnas = ("0" + Number(sharkInfo[1]).toString(16))
+        .slice(-2)
+        .toUpperCase();
+
+      console.log(sharkInfo[1]._hex.toString(16));
       console.log("revealed");
       console.log(sharkInfo[3]);
 
@@ -538,7 +545,7 @@ export default function Home() {
 
         <div className="px-6  mt-3">
           <ul className="text-gray-50 justify-center text-center flex mx-auto">
-            {revealed === false && account === owner && rawdna.length > 8 ? (
+            {revealed === false && account === owner && rawdna.length > 7 ? (
               <div className="text-gray-800">
                 <div className="mt-0 px-2  text-center font-mono">
                   {okaymint === true ? (

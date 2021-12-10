@@ -49,7 +49,7 @@ function Icon() {
 
   useEffect(() => {
     toast(
-      "This Shark Does Not Exist. Use the Machine above to Mint a new Shark!"
+      "This Shark Does Not Exist. Use the Machine above to Mint a New Shark!"
     );
   }, []);
 
@@ -89,7 +89,11 @@ function Icon() {
             duration: 10000
           });
 
-          router.push(url);
+          router.push("/shiftysharks/" + meta3).then(() => {
+            router.reload();
+          });
+          console.log("/shiftysharks/");
+          console.log(meta3);
         });
       })
       .catch(() => {
