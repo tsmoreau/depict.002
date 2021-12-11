@@ -261,10 +261,10 @@ export default function ShiftySharksMainPage() {
                       Minting Cost is 3 MATIC.
                     </li>
                     <li className="px-1 lg:px-8 py-1.5">
-                      Reveal Cost is 10 MATIC.
+                      Reveal Cost is 6 MATIC.
                     </li>
                     <li className="px-1 lg:px-8 py-1.5">
-                      Total Cost is ~15-16 MATIC with current gas prices.
+                      Total Cost is ~10-12 MATIC with current gas prices.
                     </li>
                     <li className="px-1 lg:px-8 py-1.5">
                       Unrevealed sharks are fully tradeable on OpenSea.
@@ -332,7 +332,7 @@ export default function ShiftySharksMainPage() {
               <div className="my-1 px-4 lg:px-12 py-4 flex justify-center font-mono lg:mx-0 text-gray-100 rounded-lg h-auto text-center  items-center">
                 Shifty Sharks must be individually revealed and are fully
                 tradable before the reveal period begins. Sharks cost 3 MATIC to
-                mint, and 10 MATIC to reveal. Individual Reveal Mechanics allow
+                mint, and 6 MATIC to reveal. Individual Reveal Mechanics allow
                 for complete User Curation over trait liquidity and value. The
                 supply and value of traits will alter as users reveal more
                 sharks. Trait Trading, launching in Q1 2022, will also allow

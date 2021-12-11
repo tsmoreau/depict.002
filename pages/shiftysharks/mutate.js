@@ -40,7 +40,7 @@ export default function App(props) {
   console.log(headParts[0].svgcode);
 
   const [colorTrait, setColorTrait] = React.useState(colorParts[0].svgcode);
-  const [headTrait, setHeadTrait] = React.useState(headParts[0].svgcode);
+  const [headTrait, setHeadTrait] = React.useState(0);
   const [eyeTrait, setEyeTrait] = useState(0);
   const [mouthTrait, setMouthTrait] = useState(0);
   const [clothingTrait, setClothingTrait] = useState(0);
@@ -138,7 +138,7 @@ export default function App(props) {
   );
 
   function colorUp() {
-    if (colorCounter < 8) {
+    if (colorCounter < colorParts.length - 1) {
       setColorCounter(colorCounter + 1);
     } else {
       setColorCounter(0);
@@ -148,12 +148,12 @@ export default function App(props) {
     if (colorCounter >= 1) {
       setColorCounter(colorCounter - 1);
     } else if (colorCounter < 1) {
-      setColorCounter(8);
+      setColorCounter(colorParts.length - 1);
     }
   }
 
   function headUp() {
-    if (headCounter < 17) {
+    if (headCounter < headParts.length - 1) {
       setHeadCounter(headCounter + 1);
     } else {
       setHeadCounter(0);
@@ -163,12 +163,12 @@ export default function App(props) {
     if (headCounter >= 1) {
       setHeadCounter(headCounter - 1);
     } else if (headCounter < 1) {
-      setHeadCounter(17);
+      setHeadCounter(headParts.length - 1);
     }
   }
 
   function eyeUp() {
-    if (eyeCounter < 12) {
+    if (eyeCounter < eyeParts.length - 1) {
       setEyeCounter(eyeCounter + 1);
     } else {
       setEyeCounter(0);
@@ -178,12 +178,12 @@ export default function App(props) {
     if (eyeCounter >= 1) {
       setEyeCounter(eyeCounter - 1);
     } else if (eyeCounter < 1) {
-      setEyeCounter(12);
+      setEyeCounter(eyeParts.length - 1);
     }
   }
 
   function mouthUp() {
-    if (mouthCounter < 13) {
+    if (mouthCounter < mouthParts.length - 1) {
       setMouthCounter(mouthCounter + 1);
     } else {
       setMouthCounter(0);
@@ -193,12 +193,12 @@ export default function App(props) {
     if (mouthCounter >= 1) {
       setMouthCounter(mouthCounter - 1);
     } else if (mouthCounter < 1) {
-      setMouthCounter(13);
+      setMouthCounter(mouthParts.length - 1);
     }
   }
 
   function clothingUp() {
-    if (clothingCounter < 17) {
+    if (clothingCounter < clothesParts.length - 1) {
       setClothingCounter(clothingCounter + 1);
     } else {
       setClothingCounter(0);
@@ -208,12 +208,12 @@ export default function App(props) {
     if (clothingCounter >= 1) {
       setClothingCounter(clothingCounter - 1);
     } else if (clothingCounter < 1) {
-      setClothingCounter(17);
+      setClothingCounter(clothesParts.length - 1);
     }
   }
 
   function leftFinUp() {
-    if (leftFinCounter < 8) {
+    if (leftFinCounter < leftfinParts.length - 1) {
       setLeftFinCounter(leftFinCounter + 1);
     } else {
       setLeftFinCounter(0);
@@ -223,12 +223,12 @@ export default function App(props) {
     if (leftFinCounter >= 1) {
       setLeftFinCounter(leftFinCounter - 1);
     } else if (leftFinCounter < 1) {
-      setLeftFinCounter(8);
+      setLeftFinCounter(leftfinParts.length - 1);
     }
   }
 
   function rightFinUp() {
-    if (rightFinCounter < 17) {
+    if (rightFinCounter < rightfinParts.length - 1) {
       setRightFinCounter(rightFinCounter + 1);
     } else {
       setRightFinCounter(0);
@@ -238,12 +238,12 @@ export default function App(props) {
     if (rightFinCounter >= 1) {
       setRightFinCounter(rightFinCounter - 1);
     } else if (rightFinCounter < 1) {
-      setRightFinCounter(17);
+      setRightFinCounter(rightfinParts.length - 1);
     }
   }
 
   function neckUp() {
-    if (neckCounter < 7) {
+    if (neckCounter < neckParts.length - 1) {
       setNeckCounter(neckCounter + 1);
     } else {
       setNeckCounter(0);
@@ -253,7 +253,7 @@ export default function App(props) {
     if (neckCounter >= 1) {
       setNeckCounter(neckCounter - 1);
     } else if (neckCounter < 1) {
-      setNeckCounter(7);
+      setNeckCounter(neckParts.length - 1);
     }
   }
 
@@ -262,7 +262,7 @@ export default function App(props) {
       <div className="items-center  bg-gradient-to-b from-cyan-300 via-blue-700 to-indigo-800 w-screen min-h-screen flex mx-auto  justify-center">
         <div className="w-8/12 flex flex-col items-end   h-screen px-8">
           <p id="title" className="text-7xl mt-6 -mb-12 z-40 mr-36">
-            Shifty Sharks
+            Shifty Sharks!
           </p>
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -539,26 +539,7 @@ export const neckParts = [
     name: "Pearls",
     rarity: "Epic",
     traitset: "Ballerina",
-    svgcode: `<g stroke="#606060" strokeWidth={2.2} fill="#fff">
-    <circle cx={523.19} cy={772.58} r={15.74} />
-    <circle cx={500.39} cy={752.78} r={15.74} />
-    <circle cx={478.42} cy={729.46} r={15.74} />
-    <circle cx={554.99} cy={766.57} r={15.74} />
-    <circle cx={578.18} cy={745.17} r={15.74} />
-    <circle cx={601.97} cy={721.37} r={15.74} />
-    <circle cx={459.09} cy={702.85} r={15.74} />
-    <circle cx={443.2} cy={676.13} r={15.74} />
-    <circle cx={423.9} cy={650.61} r={15.74} />
-    <circle cx={412.18} cy={620.45} r={15.74} />
-    <circle cx={398} cy={590.67} r={15.74} />
-    <circle cx={385.43} cy={560.26} r={15.74} />
-    <circle cx={371.48} cy={532.62} r={15.74} />
-    <circle cx={360.86} cy={501.37} r={15.74} />
-    <circle cx={352.93} cy={470.12} r={15.74} />
-    <circle cx={345.15} cy={437.7} r={15.74} />
-    <circle cx={345.15} cy={405.29} r={15.74} />
-    <circle cx={352.93} cy={372.87} r={15.74} />
-  </g>`
+    svgcode: `<g stroke="#606060" strokeWidth="2.2" fill="#fff"> <circle cx="523.19" cy="772.58" r="15.74"></circle> <circle cx="500.39" cy="752.78" r="15.74"></circle> <circle cx="478.42" cy="729.46" r="15.74"></circle> <circle cx="554.99" cy="766.57" r="15.74"></circle> <circle cx="578.18" cy="745.17" r="15.74"></circle> <circle cx="601.97" cy="721.37" r="15.74"></circle> <circle cx="459.09" cy="702.85" r="15.74"></circle> <circle cx="443.2" cy="676.13" r="15.74"></circle> <circle cx="423.9" cy="650.61" r="15.74"></circle> <circle cx="412.18" cy="620.45" r="15.74"></circle> <circle cx="398" cy="590.67" r="15.74"></circle> <circle cx="385.43" cy="560.26" r="15.74"></circle> <circle cx="371.48" cy="532.62" r="15.74"></circle> <circle cx="360.86" cy="501.37" r="15.74"></circle> <circle cx="352.93" cy="470.12" r="15.74"></circle> <circle cx="345.15" cy="437.7" r="15.74"></circle> <circle cx="345.15" cy="405.29" r="15.74"></circle> <circle cx="352.93" cy="372.87" r="15.74"></circle> </g>`
   },
   {
     name: "Peace Medallion",
